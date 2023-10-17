@@ -1,0 +1,813 @@
+{
+  "users": [
+    {
+      "id": "1000",
+      "name": "Product 1",
+      "price": 49.99,
+      "category": "Electronics",
+      "quantity": 25,
+      "inventoryStatus": "INSTOCK",
+      "rating": 5
+    },
+    {
+      "id": "2000",
+      "name": "Product 2",
+      "price": 19.99,
+      "category": "Clothing",
+      "quantity": 50,
+      "inventoryStatus": "OUTOFSTOCK",
+      "rating": 3
+    },
+    {
+      "id": "3000",
+      "name": "Product 3",
+      "price": 99.99,
+      "category": "Appliances",
+      "quantity": 10,
+      "inventoryStatus": "INSTOCK",
+      "rating": 4
+    }
+  ],
+  "customers": [
+    {
+      "id": 1000,
+      "name": "James Butt",
+      "country": {
+        "name": "Algeria",
+        "code": "dz"
+      },
+      "company": "Benton, John B Jr",
+      "date": "2015-09-13",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 17,
+      "representative": {
+        "name": "Ioni Bowcher",
+        "image": "ionibowcher.png"
+      },
+      "balance": 70663
+    },
+    {
+      "id": 1001,
+      "name": "Josephine Darakjy",
+      "country": {
+        "name": "Argentina",
+        "code": "ar"
+      },
+      "company": "Chanay, Jeffrey A Esq",
+      "date": "2019-08-25",
+      "status": "qualified",
+      "verified": false,
+      "activity": 25,
+      "representative": {
+        "name": "Eric Ferguson",
+        "image": "ericferguson.png"
+      },
+      "balance": 81949
+    },
+    {
+      "id": 1002,
+      "name": "Art Venere",
+      "country": {
+        "name": "Panama",
+        "code": "pa"
+      },
+      "company": "Chemel, James L Cpa",
+      "date": "2019-10-05",
+      "status": "qualified",
+      "verified": true,
+      "activity": 10,
+      "representative": {
+        "name": "Ronald May",
+        "image": "ronaldmay.png"
+      },
+      "balance": 82146
+    },
+    {
+      "id": 1003,
+      "name": "Lenna Paprocki",
+      "country": {
+        "name": "Albania",
+        "code": "al"
+      },
+      "company": "Feltz Printing Service",
+      "date": "2020-05-15",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 37,
+      "representative": {
+        "name": "Jesse Morgan",
+        "image": "jessemorgan.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1004,
+      "name": "Donette Foller",
+      "country": {
+        "name": "Ukraine",
+        "code": "ua"
+      },
+      "company": "Printing Dimensions",
+      "date": "2018-02-10",
+      "status": "qualified",
+      "verified": true,
+      "activity": 42,
+      "representative": {
+        "name": "Jim Eppolito",
+        "image": "jimeppolito.png"
+      },
+      "balance": 12345
+    },
+    {
+      "id": 1005,
+      "name": "Simona Morasca",
+      "country": {
+        "name": "Greece",
+        "code": "gr"
+      },
+      "company": "Chapman, Ross E Esq",
+      "date": "2021-11-30",
+      "status": "qualified",
+      "verified": true,
+      "activity": 18,
+      "representative": {
+        "name": "Tony Devito",
+        "image": "tonydevito.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1006,
+      "name": "Mitsue Tollner",
+      "country": {
+        "name": "Poland",
+        "code": "pl"
+      },
+      "company": "Morlong Associates",
+      "date": "2020-12-01",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 26,
+      "representative": {
+        "name": "Iola Swindle",
+        "image": "iolaswindle.png"
+      },
+      "balance": 65432
+    },
+    {
+      "id": 1007,
+      "name": "Leota Dilliard",
+      "country": {
+        "name": "South Africa",
+        "code": "za"
+      },
+      "company": "Commercial Press",
+      "date": "2022-03-11",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 13,
+      "representative": {
+        "name": "Damaris Simmoms",
+        "image": "damarissimmoms.png"
+      },
+      "balance": 76543
+    },
+    {
+      "id": 1008,
+      "name": "Sage Wieser",
+      "country": {
+        "name": "Egypt",
+        "code": "eg"
+      },
+      "company": "Truhlar And Truhlar Attys",
+      "date": "2019-04-05",
+      "status": "qualified",
+      "verified": true,
+      "activity": 9,
+      "representative": {
+        "name": "Moshe Deno",
+        "image": "moshedeno.png"
+      },
+      "balance": 87654
+    },
+    {
+      "id": 1009,
+      "name": "Kris Marrier",
+      "country": {
+        "name": "Tunisia",
+        "code": "tn"
+      },
+      "company": "King, Christopher A Esq",
+      "date": "2021-06-20",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 20,
+      "representative": {
+        "name": "Alton Gaston",
+        "image": "altongaston.png"
+      },
+      "balance": 98765
+    },
+    {
+      "id": 1010,
+      "name": "Minna Amigon",
+      "country": {
+        "name": "China",
+        "code": "cn"
+      },
+      "company": "Dorl, James J Esq",
+      "date": "2020-11-22",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 33,
+      "representative": {
+        "name": "Tomeka Schildgen",
+        "image": "tomekaschildgen.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1011,
+      "name": "Abel Maclead",
+      "country": {
+        "name": "Kazakhstan",
+        "code": "kz"
+      },
+      "company": "Rangoni, Heide M Esq",
+      "date": "2022-02-09",
+      "status": "qualified",
+      "verified": false,
+      "activity": 28,
+      "representative": {
+        "name": "Margaret Smith",
+        "image": "margaretsmith.png"
+      },
+      "balance": 65432
+    },
+    {
+      "id": 1012,
+      "name": "Kiley Caldarera",
+      "country": {
+        "name": "Lithuania",
+        "code": "lt"
+      },
+      "company": "Feiner Bros",
+      "date": "2021-12-03",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 40,
+      "representative": {
+        "name": "Gerald Butt",
+        "image": "geraldbutt.png"
+      },
+      "balance": 76543
+    },
+    {
+      "id": 1013,
+      "name": "Graciela Ruta",
+      "country": {
+        "name": "Nigeria",
+        "code": "ng"
+      },
+      "company": "Bolton, Wilbur Esq",
+      "date": "2018-06-05",
+      "status": "qualified",
+      "verified": true,
+      "activity": 22,
+      "representative": {
+        "name": "Kathleen Lehtonen",
+        "image": "kathleenlehtonen.png"
+      },
+      "balance": 87654
+    },
+    {
+      "id": 1014,
+      "name": "Cammy Albares",
+      "country": {
+        "name": "Mexico",
+        "code": "mx"
+      },
+      "company": "Fitzgerald, Edward J Esq",
+      "date": "2020-01-14",
+      "status": "qualified",
+      "verified": true,
+      "activity": 12,
+      "representative": {
+        "name": "Justin Shurtliff",
+        "image": "justinshurtliff.png"
+      },
+      "balance": 98765
+    },
+    {
+      "id": 1015,
+      "name": "Mattie Poquette",
+      "country": {
+        "name": "Russia",
+        "code": "ru"
+      },
+      "company": "Furey & Kilcullen",
+      "date": "2019-07-22",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 21,
+      "representative": {
+        "name": "George Emigh",
+        "image": "georgeemigh.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1016,
+      "name": "Meaghan Garufi",
+      "country": {
+        "name": "Brazil",
+        "code": "br"
+      },
+      "company": "Landay, James L Esq",
+      "date": "2018-05-28",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 31,
+      "representative": {
+        "name": "Jeremy Leppanen",
+        "image": "jeremyleppanen.png"
+      },
+      "balance": 65432
+    },
+    {
+      "id": 1017,
+      "name": "Gladys Schirpke",
+      "country": {
+        "name": "Colombia",
+        "code": "co"
+      },
+      "company": "Werb, George J Esq",
+      "date": "2017-02-22",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 16,
+      "representative": {
+        "name": "Keiko Bublitz",
+        "image": "keikobublitz.png"
+      },
+      "balance": 76543
+    },
+    {
+      "id": 1018,
+      "name": "Yuki Whobrey",
+      "country": {
+        "name": "Poland",
+        "code": "pl"
+      },
+      "company": "Riley, Thomas M Esq",
+      "date": "2016-06-30",
+      "status": "qualified",
+      "verified": true,
+      "activity": 19,
+      "representative": {
+        "name": "Thurman Manno",
+        "image": "thurmanmanno.png"
+      },
+      "balance": 87654
+    },
+    {
+      "id": 1019,
+      "name": "Fletcher Flosi",
+      "country": {
+        "name": "Ireland",
+        "code": "ie"
+      },
+      "company": "Marks, Thomas A Esq",
+      "date": "2018-11-17",
+      "status": "qualified",
+      "verified": true,
+      "activity": 14,
+      "representative": {
+        "name": "Alisha Slusarski",
+        "image": "alishaslusarski.png"
+      },
+      "balance": 98765
+    },
+    {
+      "id": 1020,
+      "name": "Bette Nicka",
+      "country": {
+        "name": "France",
+        "code": "fr"
+      },
+      "company": "W C Duken Co",
+      "date": "2017-11-22",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 23,
+      "representative": {
+        "name": "Alline Jeanty",
+        "image": "allinejeanty.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1021,
+      "name": "Veronika Inouye",
+      "country": {
+        "name": "Japan",
+        "code": "jp"
+      },
+      "company": "Sequor Foundation",
+      "date": "2019-05-30",
+      "status": "qualified",
+      "verified": true,
+      "activity": 8,
+      "representative": {
+        "name": "Ashley Polidori",
+        "image": "ashleypolidori.png"
+      },
+      "balance": 65432
+    },
+    {
+      "id": 1022,
+      "name": "Willard Kolmetz",
+      "country": {
+        "name": "Slovenia",
+        "code": "si"
+      },
+      "company": "Griswold, John E Esq",
+      "date": "2021-12-11",
+      "status": "qualified",
+      "verified": true,
+      "activity": 7,
+      "representative": {
+        "name": "Kendal Wasserman",
+        "image": "kendalwasserman.png"
+      },
+      "balance": 76543
+    },
+    {
+      "id": 1023,
+      "name": "Maryann Royster",
+      "country": {
+        "name": "Thailand",
+        "code": "th"
+      },
+      "company": "Asenbrenner, Stephen B Esq",
+      "date": "2019-06-30",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 5,
+      "representative": {
+        "name": "Jovita Chittenden",
+        "image": "jovitachittenden.png"
+      },
+      "balance": 87654
+    },
+    {
+      "id": 1024,
+      "name": "Margo Faines",
+      "country": {
+        "name": "Malaysia",
+        "code": "my"
+      },
+      "company": "Jewel My Shop Inc",
+      "date": "2019-03-01",
+      "status": "qualified",
+      "verified": false,
+      "activity": 34,
+      "representative": {
+        "name": "Millard Pugh",
+        "image": "millardpugh.png"
+      },
+      "balance": 98765
+    },
+    {
+      "id": 1025,
+      "name": "Lili Paskin",
+      "country": {
+        "name": "Morocco",
+        "code": "ma"
+      },
+      "company": "3com Corp",
+      "date": "2018-09-01",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 12,
+      "representative": {
+        "name": "Joaquina Dymek",
+        "image": "joaquinadymek.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1026,
+      "name": "Dominica Lorusso",
+      "country": {
+        "name": "New Zealand",
+        "code": "nz"
+      },
+      "company": "Kum & Go",
+      "date": "2019-06-21",
+      "status": "qualified",
+      "verified": false,
+      "activity": 29,
+      "representative": {
+        "name": "Marcos Goldammer",
+        "image": "marcosgoldammer.png"
+      },
+      "balance": 65432
+    },
+    {
+      "id": 1027,
+      "name": "Kasie Forman",
+      "country": {
+        "name": "Canada",
+        "code": "ca"
+      },
+      "company": "Western Wire Products Inc",
+      "date": "2018-11-21",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 27,
+      "representative": {
+        "name": "Roslyn Mongold",
+        "image": "roslynmongold.png"
+      },
+      "balance": 76543
+    },
+    {
+      "id": 1028,
+      "name": "Lenny Genna",
+      "country": {
+        "name": "Panama",
+        "code": "pa"
+      },
+      "company": "Logan Memorial Hospital",
+      "date": "2017-03-21",
+      "status": "qualified",
+      "verified": true,
+      "activity": 11,
+      "representative": {
+        "name": "Bong Outlaw",
+        "image": "bongoutlaw.png"
+      },
+      "balance": 87654
+    },
+    {
+      "id": 1029,
+      "name": "Rasheeda Stains",
+      "country": {
+        "name": "Malaysia",
+        "code": "my"
+      },
+      "company": "Winstead, Stephen D Esq",
+      "date": "2020-02-19",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 30,
+      "representative": {
+        "name": "Jeanetta Szabo",
+        "image": "jeanettaszabo.png"
+      },
+      "balance": 98765
+    },
+    {
+      "id": 1030,
+      "name": "Lavera Perin",
+      "country": {
+        "name": "Panama",
+        "code": "pa"
+      },
+      "company": "Miller, William E Iii",
+      "date": "2021-01-22",
+      "status": "qualified",
+      "verified": true,
+      "activity": 24,
+      "representative": {
+        "name": "Wai Magwood",
+        "image": "waimagwood.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1031,
+      "name": "Lucina Lary",
+      "country": {
+        "name": "Sri Lanka",
+        "code": "lk"
+      },
+      "company": "Borton, John A Esq",
+      "date": "2019-11-03",
+      "status": "qualified",
+      "verified": true,
+      "activity": 18,
+      "representative": {
+        "name": "Katie Nunlee",
+        "image": "katienunlee.png"
+      },
+      "balance": 65432
+    },
+    {
+      "id": 1032,
+      "name": "Ashleigh Cozart",
+      "country": {
+        "name": "Mexico",
+        "code": "mx"
+      },
+      "company": "Taco Bell",
+      "date": "2019-07-15",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 17,
+      "representative": {
+        "name": "Randy Turbin",
+        "image": "randyturbin.png"
+      },
+      "balance": 76543
+    },
+    {
+      "id": 1033,
+      "name": "Alysha Behunin",
+      "country": {
+        "name": "Portugal",
+        "code": "pt"
+      },
+      "company": "F W Heitman & Co",
+      "date": "2019-06-14",
+      "status": "qualified",
+      "verified": true,
+      "activity": 29,
+      "representative": {
+        "name": "Nenita Archibald",
+        "image": "nenitaarchibald.png"
+      },
+      "balance": 87654
+    },
+    {
+      "id": 1034,
+      "name": "Kendal Cantrell",
+      "country": {
+        "name": "Norway",
+        "code": "no"
+      },
+      "company": "Sandra D King",
+      "date": "2019-07-14",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 32,
+      "representative": {
+        "name": "Avril Mealing",
+        "image": "avrilmealing.png"
+      },
+      "balance": 98765
+    },
+    {
+      "id": 1035,
+      "name": "Hannah Edelstein",
+      "country": {
+        "name": "Egypt",
+        "code": "eg"
+      },
+      "company": "Womans Society Of Friends",
+      "date": "2017-10-06",
+      "status": "qualified",
+      "verified": true,
+      "activity": 27,
+      "representative": {
+        "name": "Elaine Oberle",
+        "image": "elaineoberle.png"
+      },
+      "balance": 54321
+    },
+    {
+      "id": 1036,
+      "name": "Frankie Petteway",
+      "country": {
+        "name": "Australia",
+        "code": "au"
+      },
+      "company": "Ricoh Business Systems",
+      "date": "2019-02-07",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 12,
+      "representative": {
+        "name": "Octavio Taper",
+        "image": "octaviotaper.png"
+      },
+      "balance": 65432
+    },
+    {
+      "id": 1037,
+      "name": "Lane Mendia",
+      "country": {
+        "name": "United Kingdom",
+        "code": "gb"
+      },
+      "company": "Core Communications Inc",
+      "date": "2019-03-10",
+      "status": "qualified",
+      "verified": true,
+      "activity": 19,
+      "representative": {
+        "name": "Kimiko Zikmund",
+        "image": "kimikozikmund.png"
+      },
+      "balance": 76543
+    },
+    {
+      "id": 1038,
+      "name": "Leola Lundborg",
+      "country": {
+        "name": "Sweden",
+        "code": "se"
+      },
+      "company": "Deloitte & Touche",
+      "date": "2018-08-03",
+      "status": "unqualified",
+      "verified": false,
+      "activity": 10,
+      "representative": {
+        "name": "Jonathan Lavine",
+        "image": "jonathanlavine.png"
+      },
+      "balance": 87654
+    },
+    {
+      "id": 1039,
+      "name": "Margurite Maushard",
+      "country": {
+        "name": "Denmark",
+        "code": "dk"
+      },
+      "company": "Basilf Restaurant",
+      "date": "2020-09-16",
+      "status": "qualified",
+      "verified": true,
+      "activity": 14,
+      "representative": {
+        "name": "Marissa Schlabaugh",
+        "image": "marissaschlabaugh.png"
+      },
+      "balance": 98765
+    },
+    {
+      "id": 1040,
+      "name": "Simonne Ridgley",
+      "country": {
+        "name": "Greece",
+        "code": "gr"
+      },
+      "company": "J Peter Thomas Co",
+      "date": "2017-03-06",
+      "status": "unqualified",
+      "verified": true,
+      "activity": 35,
+      "representative": {
+        "name": "Kendall Masuda",
+        "image": "kendallmasuda.png"
+      },
+      "balance": 54321
+    }
+  ],
+  "product": [
+    {
+      "item": "01",
+      "name": "Rare Beauty Soft Pinch Liquid Blush",
+      "desc": "A weightless, long-lasting liquid blush that blends and builds beautifully for a soft, healthy flush. Available in matte and dewy finishes.",
+      "price": "23.00",
+      "category": "Makeup",
+      "color": "#CCCDFF",
+      "mainColor": "#4649FF"
+
+    },
+    {
+      "item": "02",
+      "name": "iPhone 15 Pro",
+      "desc": "With iPhone 15 Pro, you have multiple focal lengths to work with. It’s like having seven pro lenses in your pocket, everywhere you go.",
+      "price": "1,199.00",
+      "category": "Electronics",
+      "color": "#FFBBCE",
+      "mainColor": "#EA047E"
+
+    },
+    {
+      "item": "03",
+      "name": "Caramel Frappuccino",
+      "desc": "Salted Caramel syrup combined with coffee and Oatmilk, blended with ice. Topped with Caramel Coffee Whipped Cream, Caramel drizzle, and Himalayas Salted Caramel Sprinkle.",
+      "price": "28.00",
+      "category": "Coffee",
+      "color": "#FFE6AF",
+      "mainColor": "#FFB100"
+
+    },
+    {
+      "item": "04",
+      "name": "Glow Recipe Dewy Skin Goals Kit",
+      "desc": "A clinically effective, visibly brightening and hydrating trio, including full-size Dew Drops Serum, PHA+ AHA Toner, and travel-size moisturizer for smooth-, glowing-looking skin.",
+      "price": "62.00",
+      "category": "Makeup",
+      "color": "#FFC89A",
+      "mainColor": "#FD841F"
+
+    }
+  ]
+}

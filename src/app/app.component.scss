@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+    max-height: 100vh;
+    &-navbar {
+        flex: 20%;
+        background-color: #ffffff;
+    }
+    &-content {
+        flex: 80%;
+        padding: 2rem 2rem 02rem 0;
+    }
+}
+
+::ng-deep .p-tree .p-tree-container .p-treenode .p-treenode-content .p-tree-toggler {
+    color: rgb(65, 65, 65);
+}

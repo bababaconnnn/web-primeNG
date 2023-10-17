@@ -1,0 +1,27 @@
+.display-wrapper {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    .block-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .icon {
+            padding: 10px;
+            border-radius: 10px;
+        }
+        label {
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        .desc {
+            width: 100%;
+            color: rgb(126, 126, 126);
+            font-size: 0.9rem;
+            // font-weight: 400;
+            line-height: 1.23rem;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}

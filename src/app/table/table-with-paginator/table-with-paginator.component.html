@@ -1,0 +1,27 @@
+<div class="card pt-2">
+    <!-- <p-scrollPanel [style]="{ width: '100%', height: '150px' }"> -->
+        <p-table [value]="customers" 
+            [paginator]="true" [rows]="5" [showCurrentPageReport]="true" [paginatorStyleClass]="'pt-5'"
+            [tableStyle]="{'width': '100%','font-size':'0.85rem'}" currentPageReportTemplate="{first} to {last} of {totalRecords} entries"
+            [scrollable]="true" scrollHeight="350px"
+            [rowsPerPageOptions]="[5,10, 25, 50]">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th style="width:25%">Name</th>
+                    <th style="width:25%">Country</th>
+                    <th style="width:25%">Company</th>
+                    <th style="width:25%">Representative</th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-customer>
+                <tr>
+                    <td>{{ customer.name }}</td>
+                    <td>{{ customer.country.name }}</td>
+                    <td>{{ customer.company }}</td>
+                    <td>{{ customer.representative.name }}</td>
+                </tr>
+            </ng-template>
+
+        </p-table>
+    <!-- </p-scrollPanel> -->
+</div>

@@ -1,0 +1,37 @@
+label.title {
+    font-weight: 400;
+    color: rgb(121, 119, 119);
+    font-family: 'Gabarito', sans-serif;
+    font-size: 0.8rem;
+}
+
+p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    &.desc {
+        font-size: 1rem;
+        font-weight: 600;
+        color: rgb(65, 63, 63);
+    }
+}
+
+hr {
+    border-color: rgb(255, 255, 255);
+}
+
+.card {
+    &-left {
+        display: flex;
+        flex-direction: column;
+        flex: 50%;
+        height: 100%;
+        .block-wrapper {
+            height: 50%;
+        }
+    }
+    &-right {
+        flex: 50%
+    }
+}

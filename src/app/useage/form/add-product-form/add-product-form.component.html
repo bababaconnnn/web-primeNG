@@ -1,0 +1,41 @@
+<p-toast></p-toast>
+<div class="add-product-form block-wrapper grid w-9">
+    <form [formGroup]="product" class="col" (ngSubmit)="onSubmit()">
+        <div class="flex gap-4 w-full">
+            <div class="w-4">
+                <label class="block mb-2">Product's Name</label>
+                <span class="p-input-icon-left w-full">
+                    <i class="pi pi-megaphone"></i>
+                    <input type="text" pInputText formControlName="name" />
+                </span>
+                <small class="p-error" *ngIf="product?.get('name')?.dirty && !product?.get('name')?.valid">Product's Name is requried.</small>
+            </div>
+            <div class="w-8">
+                <div class="flex flex-wrap justify-content-between align-items-end gap-3">
+                    <div>
+                        <label for="price-input" class="block mb-2">Price</label>
+                        <p-inputNumber inputId="price-input" formControlName="price"></p-inputNumber>
+                    </div>
+                    <div>
+                        <p-dropdown formControlName="item" [options]="item" optionLabel="name"></p-dropdown>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-3 w-full">
+            <label class="block mb-2">Descscription</label>
+            <textarea rows="5" pInputTextarea formControlName="desc"></textarea>
+            <small class="p-error" *ngIf="product?.get('desc')?.dirty && !product?.get('desc')?.valid">Descscription is requried.</small>
+        </div>
+        <div class="pt-3 w-full flex justify-content-between align-items-end">
+            <div>
+                <label class="block mb-2">Categories</label>
+                <p-dropdown formControlName="category" [options]="cate" optionLabel="name" placeholder="Select Categories" class="mr-3"></p-dropdown>
+                <p-message severity="error" text="Field is required" 
+                    *ngIf="product?.get('category')?.touched && !product?.get('category')?.valid"></p-message>
+            </div>
+            <button pButton pRipple label="Submit" type="Submit" class="p-button-success"></button>
+            
+        </div>
+    </form>
+</div>

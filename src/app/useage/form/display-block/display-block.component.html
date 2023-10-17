@@ -1,0 +1,22 @@
+<div class="display-wrapper grid gap-4 w-full">
+    <ng-container *ngFor="let item of product">
+        <div class="block-wrapper col p-3">
+            <div class="flex justify-content-between align-items-center">
+                <div class="flex align-items-center gap-3 mr-3">
+                    <div class="icon" [ngStyle]="{'background-color': item.color}">
+                        <i class="pi pi-gift" style="font-size: 1.5rem;" [ngStyle]="{'color': item.mainColor}"></i>
+                    </div>
+                    <label>{{ item.name }}</label>
+                </div>
+                <i class="pi pi-ellipsis-v" style="font-size: 1.1rem;" [ngStyle]="{'color': 'gray'}"></i>
+            </div>
+            <div class="desc">
+                <p>{{ item.desc }}</p>
+            </div>
+            <div class="tag flex gap-2 mt-3">
+                <p-tag icon="pi pi-shopping-cart" [value]="item.price" [rounded]="true" [style]="{'background-color': item.color, 'color': 'black', 'font-weight' : '500', 'padding': '5px 15px','opacity': '0.5'}"></p-tag>
+                <p-tag [value]="item.category" [rounded]="true" [style]="{'background-color': item.color, 'color': 'black', 'font-weight' : '500', 'padding': '5px 15px','opacity': '0.5'}"></p-tag>
+            </div>
+        </div>
+    </ng-container>
+</div>

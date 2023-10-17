@@ -1,0 +1,98 @@
+<div class="w-full block-wrapper">
+    <p>Input Text</p>
+    <hr>
+    <div class="card flex justify-content-start gap-3 pt-3">
+        <input type="text" pInputText [(ngModel)]="value" />
+        <input pInputText class="ng-invalid ng-dirty" [(ngModel)]="value" />
+        <span class="p-input-icon-left">
+            <i class="pi pi-search"></i>
+            <input type="text" pInputText />
+        </span>
+
+        <span class="p-input-icon-right">
+            <i class="pi pi-spin pi-spinner"></i>
+            <input type="text" pInputText />
+        </span>
+    </div>
+</div>
+<div class="w-full mt-5 block-wrapper">
+    <p>Input Number</p>
+    <hr>
+    <div class="card flex flex-wrap gap-3 p-fluid pt-3">
+        <div class="flex gap-2 flex-column">
+            <label for="integeronly" class="title">Integer Only</label>
+            <p-inputNumber inputId="integeronly" [(ngModel)]="value1"> </p-inputNumber>
+        </div>
+        <div class="flex gap-2 flex-column">
+            <label for="withoutgrouping" class="title">Without Grouping</label>
+            <p-inputNumber [(ngModel)]="value2" mode="decimal" inputId="withoutgrouping" [useGrouping]="false">
+            </p-inputNumber>
+        </div>
+        <div class="flex gap-2 flex-column">
+            <label for="minmaxfraction" class="title">Min-Max Fraction Digits</label>
+            <p-inputNumber [(ngModel)]="value3" inputId="minmaxfraction" mode="decimal" [minFractionDigits]="2"
+                [maxFractionDigits]="5"> </p-inputNumber>
+        </div>
+        <div class="flex gap-2 flex-column">
+            <label for="minmax" class="title">Min-Max Boundaries</label>
+            <p-inputNumber [(ngModel)]="value4" inputId="minmax" mode="decimal" [min]="0" [max]="100"> </p-inputNumber>
+        </div>
+    </div>
+</div>
+<div class="card mt-5">
+    <div class="flex gap-5">
+        <div class="card-left gap-5">
+            <div class="block-wrapper">
+                <p>Input Password</p>
+                <hr>
+                <div class="card flex justify-content-start pt-3">
+                    <p-password [(ngModel)]="value" [toggleMask]="true"></p-password>
+                </div>
+            </div>
+            <div class="block-wrapper">
+                <p>Input With Regex</p>
+                <hr>
+                <app-input-with-regex></app-input-with-regex>
+            </div>
+        </div>
+        <div class="card-right block-wrapper">
+            <p>Radio Button</p>
+            <hr>
+            <div class="flex flex-wrap gap-3 pt-3">
+                <div class="flex align-items-center">
+                    <p-radioButton name="pizza" value="Cheese" [(ngModel)]="ingredient"
+                        inputId="ingredient1"></p-radioButton>
+                    <label for="ingredient1" class="ml-2">Cheese</label>
+                </div>
+
+                <div class="flex align-items-center">
+                    <p-radioButton name="pizza" value="Mushroom" [(ngModel)]="ingredient"
+                        inputId="ingredient2"></p-radioButton>
+                    <label for="ingredient2" class="ml-2">Mushroom</label>
+                </div>
+
+                <div class="flex align-items-center">
+                    <p-radioButton name="pizza" value="Pepper" [(ngModel)]="ingredient"
+                        inputId="ingredient3"></p-radioButton>
+                    <label for="ingredient3" class="ml-2">Pepper</label>
+                </div>
+
+                <div class="flex align-items-center">
+                    <p-radioButton name="pizza" value="Onion" [(ngModel)]="ingredient"
+                        inputId="ingredient4"></p-radioButton>
+                    <label for="ingredient4" class="ml-2">Onion</label>
+                </div>
+            </div>
+            <p class="desc pt-3 mt-4">Dynamic RadioButtons</p>
+            <div class="card flex justify-content-start pt-3">
+                <div class="flex flex-column gap-3">
+                    <div *ngFor="let category of categories" class="field-checkbox">
+                        <p-radioButton [inputId]="category.key" name="category" [value]="category"
+                            [(ngModel)]="selectedCategory"></p-radioButton>
+                        <label [for]="category.key" class="ml-2">{{ category.name }}</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
